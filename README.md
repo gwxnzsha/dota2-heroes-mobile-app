@@ -9,6 +9,7 @@ A **React Native mobile application** for managing Dota 2 heroes using **CRUD (C
 * Edit hero information
 * Delete heroes
 * REST API integration
+* YouTube Data API v3 integration
 * MySQL database
 * Mobile-friendly React Native interface
 
@@ -18,15 +19,38 @@ A **React Native mobile application** for managing Dota 2 heroes using **CRUD (C
 * JavaScript / TypeScript
 * PHP
 * REST API
+* YouTube Data API v3
 * MySQL
 * Freehostia
 * DuckDNS
 * Git & GitHub
 
+## 🔗 Third-Party API
+
+This project uses the **YouTube Data API v3** to retrieve YouTube video information related to Dota 2 heroes.
+
+**API URL:**
+
+```text
+https://www.googleapis.com/youtube/v3/
+```
+
+The API can be used to retrieve:
+
+* YouTube videos
+* Video titles
+* Video descriptions
+* Channel information
+* Video thumbnails
+
+> **Note:** An API key is required to access the YouTube Data API v3. Do not upload your API key to GitHub.
+
 ## 🏗️ Architecture
 
 ```text
 React Native App
+       │
+       ├──────────────► YouTube Data API v3
        │
        ▼
     REST API
@@ -62,6 +86,8 @@ Configure your API URL:
 const API_URL = "https://your-domain.duckdns.org/api";
 ```
 
+Configure your YouTube API key securely in your project.
+
 Run the application:
 
 ```bash
@@ -80,7 +106,7 @@ The backend API is hosted using **Freehostia**, with **DuckDNS** used for domain
 
 ## 🎯 Purpose
 
-This project was created for educational purposes to demonstrate **React Native, CRUD operations, REST API integration, MySQL, and web hosting**.
+This project was created for educational purposes to demonstrate **React Native, CRUD operations, REST API integration, YouTube Data API v3, MySQL, and web hosting**.
 
 ## 📄 License
 
