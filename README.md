@@ -71,7 +71,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/dota2-heroes-crud-app.git
-cd dota2-heroes-crud-app
+cd dota2-heroes-mobile-app
 ```
 
 Install dependencies:
